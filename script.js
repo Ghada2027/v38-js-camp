@@ -14,3 +14,8 @@ console.log(ticketCount);
 const isVip = false;
 
 console.log(isVip);
+
+function totalMinutes(hours, minutes) {
+  //return hours * 60 + minutes;
+}
+console.log(totalMinutes(2, 15));
