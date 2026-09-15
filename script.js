@@ -60,7 +60,7 @@ if (tempC >= 20) {
 }
 
 const routes = ["Linje 2", "Linje 5", "Linje 8"];
-for const(route of routes){
+for (const route of routes){
     console.log("Avgår:"+ route);
 }
 
@@ -71,3 +71,28 @@ console.log(triple(8));
 
 // const triple = (n) => n * 3;
 // samma jobb, annan stavning
+
+const subjects= ["JavaScript","HTML","CSS","Git"];
+for (const subject of subjects){
+    console.log(subject);
+}
+const task= {
+    title:"JavaScript",
+    urgency:2,
+    isOpen: true
+};
+console.log(task.title);
+console.log(task.urgency);
+
+function addNumbers(a,b){
+    return a+b;
+}
+console.log(addNumbers(10,5));
+
+if (task.urgency >= 3) {
+  console.log("Hög");
+} else if (task.urgency >= 2) {
+  console.log("Medel");
+} else {
+  console.log("Låg");
+}
