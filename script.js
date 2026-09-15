@@ -1,98 +1,30 @@
-const eventName = "Stars Live";
 
-console.log(eventName);
-console.log(eventName);
 
-let ticketCount = 0;
 
-console.log(ticketCount);
+//Utgångsläge 
 
-ticketCount = 10;
-
-console.log(ticketCount);
-
-const isVip = false;
-
-console.log(isVip);
+let eventName = "Aurora Live";
+eventName = "Nord Glow"; // ändrat const till let, eftersom värdet ska kunna ändras
 
 function totalMinutes(hours, minutes) {
-  return hours * 60 + minutes;
+  return hours * 60 + minutes; // lagt till return för att funktionen ska returnera resultatet
 }
-console.log(totalMinutes(2, 15));
 
+console.log(totalMinutes(1, 30));
 
-const isMember = true;
-let shipping= 79;
-
-if (isMember=== true){
-    shipping =0;
-
-} else{
-    console.log("ordinarie frakt");
-}
-console.log(shipping);
-
-const cities= ["Malmö","Göteborg","Umeå"];
-
-console.log(cities[0]);
+const cities = ["Malmö", "Göteborg", "Umeå"];
+console.log(cities[2]); // skrivit index 2 för att få sista elementet
 console.log(cities.length);
 
-const product={
-    title:"Hörlurar",
-    stock:4,
-    inStock:true
-};
-console.log(product.title);
-console.log(product.stock);
+const product = { title: "Hörlurar", stock: 4 };
+console.log(product.title); // rättat nyckeln från titel till title
 
-for(const city of cities){
-    console.log(city);
+if (5 === "5") { //ändrat == till === för strikt jämförelse
+  console.log("lösa jämförelsen ljuger");
+}else {
+  console.log("strikt jämförelse: olika typer");
 }
 
-const tempC = 12;
-
-if (tempC >= 20) {
-  console.log("varmt");
-} else if (tempC >= 10) {
-  console.log("ljummet");
-} else {
-  console.log("kallt");
-}
-
-const routes = ["Linje 2", "Linje 5", "Linje 8"];
-for (const route of routes){
-    console.log("Avgår:"+ route);
-}
-
-function triple(n) {
-  return n * 3;
-}
-console.log(triple(8));
-
-// const triple = (n) => n * 3;
-// samma jobb, annan stavning
-
-const subjects= ["JavaScript","HTML","CSS","Git"];
-for (const subject of subjects){
-    console.log(subject);
-}
-const task= {
-    title:"JavaScript",
-    urgency:2,
-    isOpen: true
-};
-console.log(task.title);
-console.log(task.urgency);
-
-function addNumbers(a,b){
-    return a+b;
-}
-console.log(addNumbers(10,5));
-
-if (task.urgency >= 3) {
-  console.log("Hög");
-} else if (task.urgency >= 2) {
-  console.log("Medel");
-} else {
-  console.log("Låg");
+for (const city of cities) {
+  console.log(city);
 }
